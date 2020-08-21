@@ -21,11 +21,11 @@ class Battle < Sinatra::Base
     erb(:play)
   end
 
-  get '/action' do
+  get '/attack' do
     @player1 = $player1
     @player2 = $player2
     @player1.attack(@player2)
-    erb(:action)
+    erb(:attack)
   end
 
   #starts the server if ruby file executed directly

@@ -3,10 +3,11 @@ require 'player'
 describe Player do
     subject(:yaz) { Player.new('Yaz') }
     subject(:charlotte) { Player.new('Charlotte') }
+
     describe '#name' do
-        it 'returns the name' do
-            expect(yaz.name).to eq 'Yaz'
-        end
+      it 'returns the name' do
+        expect(yaz.name).to eq 'Yaz'
+      end
     end
 
     describe '#hit_points' do
